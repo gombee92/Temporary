@@ -113,7 +113,7 @@ section {
 
 /*** 헤더 ***/
 
-nav {
+.nav {
   position: fixed;
   background-color: var(--main-color01);
   width: 15vw;
@@ -125,11 +125,11 @@ nav {
   transition: left 0.3s;
 }
 
-nav.on {
+.nav.on {
   left: 0vw;
 }
 
-nav .logo img {
+.nav .logo img {
   /* border: 1px solid red; */
   width: 100%;
   transform: translateX(25%) rotateZ(-10deg);
@@ -756,29 +756,30 @@ footer {
   }
 
   /* 메뉴 */
-  nav {
-    left: -100vw;
-  }
-
-  nav.on {
-    /* border: 1px solid red; */
-    display: flex !important;
+  .nav,
+  .nav.on {
+    left: 0;
     width: 100vw;
-    height: 10vh;
-    justify-content: center;
-    align-items: center;
+    height: 100px;
+    display: flex !important;
+    justify-content: space-between;
   }
 
-  nav .logo {
-    width: 20%;
+  .nav img {
+    height: 88%;
   }
 
-  nav>.gnb {
-    /* border: 1px solid red; */
-    position: relative;
+  .gnb {
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+  }
+
+  .gnb li {
+    padding: 0;
+  }
+
+  .gnb li a {
+    padding: 1rem;
   }
 
   .nav li {
@@ -786,7 +787,7 @@ footer {
   }
 
   .gotop {
-    left: 85vw;
+    left: 85vw !important;
     z-index: 9999;
   }
 

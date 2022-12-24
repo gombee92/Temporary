@@ -65,6 +65,7 @@ elm.forEach(function (item, index) {
 });
 
 const $gotop = document.querySelector(".gotop");
+const $menu = document.querySelector(".menu");
 
 // 네비 등장시키기
 window.addEventListener("scroll", function () {
@@ -76,6 +77,19 @@ window.addEventListener("scroll", function () {
     $gotop.classList.remove("on");
   } else {
     document.querySelector(".nav").classList.remove("on");
+    $gotop.classList.add("on");
+  }
+});
+
+window.addEventListener("scroll", function () {
+  let scrollTop =
+    document.documentElement.scrollTop || window.scrollY || window.pageYOffset;
+
+  if (scrollTop > 100) {
+    document.querySelector(".menu").classList.add("on");
+    $gotop.classList.remove("on");
+  } else {
+    document.querySelector(".menu").classList.remove("on");
     $gotop.classList.add("on");
   }
 });
