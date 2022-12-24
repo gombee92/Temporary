@@ -127,8 +127,6 @@ nav {
 
 nav.on {
   left: 0vw;
-  animation-name: menu_pop, menu_scale, drop_in;
-  animation-duration: 1s;
 }
 
 nav .logo img {
@@ -155,6 +153,10 @@ nav .logo img {
   padding: 1.5vh 0;
   padding-right: 15vw;
   transition: 0.2s;
+}
+
+.gnb li .menu.on {
+  color: var(--sub-color02);
 }
 
 .gnb li a:hover {

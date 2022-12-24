@@ -80,6 +80,9 @@ window.addEventListener("scroll", function () {
   }
 });
 
+
+//메뉴
+
 // 헥사곤
 let hexagoni = document.getElementsByClassName("hexagon");
 
