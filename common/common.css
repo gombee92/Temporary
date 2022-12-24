@@ -3,8 +3,7 @@
 
 @font-face {
   font-family: "NanumSquareNeo-Variable";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2")
-    format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -543,12 +542,13 @@ footer {
   display: flex;
   text-align: center;
 }
+
 /*** 푸터 끝 ***/
 
 /*** 헥사곤 ***/
 .container {
   /* border: 2px solid red; */
-  top: 49%;
+  top: 51%;
   position: absolute;
   transform: translateY(-50%);
 }
@@ -565,6 +565,7 @@ footer {
   margin-top: -35px;
   margin-left: -33px;
 }
+
 .row .hexagon {
   position: relative;
   width: 100px;
@@ -574,6 +575,7 @@ footer {
   display: block;
   transition: all 0.2s linear;
 }
+
 .row .hexagon::after {
   content: "";
   position: absolute;
@@ -585,6 +587,7 @@ footer {
   border-top: 28.87px solid #ebebeb;
   transition: all 0.2s linear;
 }
+
 .row .hexagon::before {
   content: "";
   position: absolute;
@@ -595,6 +598,7 @@ footer {
   border-bottom: 28.87px solid #ebebeb;
   transition: all 0.2s linear;
 }
+
 .row.row-moved {
   margin-left: 19px;
 }
@@ -603,9 +607,11 @@ footer {
   background: var(--sub-color02) !important;
   animation: colorgen 1s infinite;
 }
+
 .light::after {
   border-top: 28.87px solid var(--sub-color02) !important;
 }
+
 .light::before {
   border-bottom: 28.87px solid var(--sub-color02) !important;
 }
@@ -687,6 +693,7 @@ footer {
   0% {
     filter: var(--main-color01);
   }
+
   100% {
     filter: var(--main-color01);
   }
@@ -709,25 +716,27 @@ footer {
   }
 }
 
-@-webkit-keyframes menu_pop {
-  0% {
-    left: -15px;
+@keyframes up-and-down {
+
+  0%,
+  100% {
+    transform: translateY(-45%) rotate(var(--angle));
   }
 
-  100% {
-    left: 0px;
+  50% {
+    transform: translateY(45%) rotate(var(--angle));
   }
 }
 
-@keyframes menu_pop {
-  0% {
-    left: -10px;
-    opacity: 0;
+@keyframes up-and-down {
+
+  0%,
+  100% {
+    transform: translateY(-45%) rotate(var(--angle));
   }
 
-  100% {
-    left: 0px;
-    opacity: 1;
+  50% {
+    transform: translateY(45%) rotate(var(--angle));
   }
 }
 
@@ -762,7 +771,7 @@ footer {
     width: 20%;
   }
 
-  nav > .gnb {
+  nav>.gnb {
     /* border: 1px solid red; */
     position: relative;
     flex-direction: row;
@@ -788,7 +797,7 @@ footer {
 
   .sec1 {
     /* border: 1px solid firebrick; */
-    padding-top: 15vh;
+    padding-top: 10vh;
   }
 
   .sec1_inner {

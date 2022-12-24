@@ -46,7 +46,7 @@ elm.forEach(function (item, index) {
           moveTop =
             window.pageYOffset +
             elmSelector.nextElementSibling.getBoundingClientRect().top;
-        } catch (e) {}
+        } catch (e) { }
       }
     }
     // 휠 업
@@ -56,7 +56,7 @@ elm.forEach(function (item, index) {
           moveTop =
             window.pageYOffset +
             elmSelector.previousElementSibling.getBoundingClientRect().top;
-        } catch (e) {}
+        } catch (e) { }
       }
     }
 
@@ -102,3 +102,4 @@ $body.addEventListener("mousemove", function (e) {
       left:${x}px; top:${y}px;
     `;
 });
+
