@@ -81,18 +81,6 @@ window.addEventListener("scroll", function () {
   }
 });
 
-window.addEventListener("scroll", function () {
-  let scrollTop =
-    document.documentElement.scrollTop || window.scrollY || window.pageYOffset;
-
-  if (scrollTop > 100) {
-    document.querySelector(".menu").classList.add("on");
-    $gotop.classList.remove("on");
-  } else {
-    document.querySelector(".menu").classList.remove("on");
-    $gotop.classList.add("on");
-  }
-});
 
 
 //메뉴
